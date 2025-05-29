@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--header-footer-color);
+  padding: 2em 3em;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header.scrolled {
+  padding: 0.5em 3em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 3em;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: var(--navigation-font);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  margin-left: 3em;
+}
+
+.language-switcher button {
+  background: transparent;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  margin-top: 2px;
+}
+.language-switcher button:hover,
+.language-switcher button.active {
+  color: #ffffff;
+  border-bottom: 2px solid white;
+}
