@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   const { t } = useTranslation();
@@ -14,9 +15,9 @@ function HeroSection() {
           <br />
           {t("hero_tagline")}
         </p>
-        <a href="#contact" className="hero-button">
+        <Link to="/contact" className="hero-button">
           {t("hero_cta")}
-        </a>
+        </Link>
       </div>
     </section>
   );

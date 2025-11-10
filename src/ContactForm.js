@@ -5,32 +5,76 @@ import { FaEnvelope, FaUser, FaPen } from "react-icons/fa";
 import "./ContactForm.css";
 
 function ContactForm() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [honeypot, setHoneypot] = useState(""); // Honeypot state
+  const [honeypot, setHoneypot] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const showMessage = (msg) => {
+    setMessage(msg);
+    setTimeout(() => setMessage(""), 4000);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Check honeypot
+
     if (honeypot) {
-      alert(t("contact_form_spam"));
+      showMessage(t("contact_form_spam"));
       return;
     }
-    // Handle form submission (send to backend, email, etc.)
-    alert(t("contact_form_success"));
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch(
+        "https://us-central1-striga-digital.cloudfunctions.net/api/sendContactEmail",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...formData,
+            lang: i18n.language,
+          }),
+        }
+      );
+
+      const responseData = await response.json();
+
+      if (!response.ok) {
+        throw new Error(responseData.error || "Unknown error");
+      }
+
+      showMessage(t("contact_form_success"));
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error:", error);
+      showMessage(`${t("contact_form_error")}: ${error.message}`);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <section className="contact-form-section">
+      {message && (
+        <motion.div
+          className="form-message"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+        >
+          {message}
+        </motion.div>
+      )}
       <motion.div
         className="contact-form-container"
         initial={{ opacity: 0, y: 40 }}
@@ -39,18 +83,20 @@ function ContactForm() {
       >
         <h2>{t("contact_form_title")}</h2>
         <form onSubmit={handleSubmit}>
-          {/* Honeypot field (hidden) */}
-          <div style={{ display: "none" }}>
+          <div style={{ display: "none" }} aria-hidden="true">
             <label>
-              <span>Do not fill this out if you are human</span>
+              <span>Do not fill this out</span>
               <input
                 type="text"
                 name="honeypot"
                 value={honeypot}
                 onChange={(e) => setHoneypot(e.target.value)}
+                tabIndex="-1"
+                autoComplete="off"
               />
             </label>
           </div>
+
           <motion.div
             className="form-group"
             initial={{ opacity: 0, x: -20 }}
@@ -69,6 +115,7 @@ function ContactForm() {
               required
             />
           </motion.div>
+
           <motion.div
             className="form-group"
             initial={{ opacity: 0, x: -20 }}
@@ -87,6 +134,7 @@ function ContactForm() {
               required
             />
           </motion.div>
+
           <motion.div
             className="form-group"
             initial={{ opacity: 0, x: -20 }}
@@ -104,13 +152,17 @@ function ContactForm() {
               required
             ></textarea>
           </motion.div>
+
           <motion.button
             type="submit"
             className="submit-btn"
+            disabled={isSubmitting}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
           >
-            {t("contact_form_submit")}
+            {isSubmitting
+              ? t("contact_form_sending")
+              : t("contact_form_submit")}
           </motion.button>
         </form>
       </motion.div>

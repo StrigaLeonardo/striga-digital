@@ -9,7 +9,27 @@
 
   --header-footer-color: #121212;
   --primary-color: #534e7d;
+  --black-color: #121212;
+
+  --header-h: 115px;
+
+  /* Reusable elevation + motion tokens */
+  --elev-rest: 0 4px 24px rgba(83, 78, 125, 0.14),
+    0 1.5px 8px rgba(0, 0, 0, 0.1);
+  --elev-hover: 0 16px 48px rgba(83, 78, 125, 0.22),
+    0 6px 24px rgba(0, 0, 0, 0.17);
+
+  --lift-rest: 0px;
+  --lift-hover: -4px;
+
+  --scale-rest: 1;
+  --scale-hover: 1.02;
+
+  --elev-transition: box-shadow 0.25s ease, transform 0.2s ease;
 }
-body {
+body,
+html {
   font-family: "Montserrat", Arial, sans-serif;
+  max-width: 100vw;
+  overflow: visible;
 }

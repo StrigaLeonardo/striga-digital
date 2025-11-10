@@ -4,7 +4,7 @@
   "Projekti": "Projects",
   "Kontakt": "Contact",
   "services": "Services",
-  "about": "About",
+  "about": "About Us",
   "contact": "Contact",
   "privacy_policy": "Privacy Policy",
   "cookie_policy": "Cookie Policy",
@@ -25,7 +25,7 @@
   "service_4_title": "SEO Optimization",
   "service_4_desc": "Improving your website's ranking and increasing visibility.",
   "service_5_title": "Digital Marketing",
-  "service_5_desc": "Google and Facebook ads, email campaigns, and social media.",
+  "service_5_desc": "Google ads, email campaigns, and social media.",
   "service_6_title": "Graphic Design & Branding",
   "service_6_desc": "Logo design, branding, and visual solutions for your business.",
   "service_7_title": "Support & Maintenance",
@@ -64,6 +64,100 @@
   "contact_form_email": "Email Address",
   "contact_form_message": "Your Message",
   "contact_form_submit": "Send Message",
+  "contact_form_sending": "Sending...",
   "contact_form_success": "Message sent successfully!",
-  "contact_form_spam": "Your message was rejected as spam."
+  "contact_form_error": "Error sending message. Please try again later.",
+  "contact_form_spam": "Message rejected as spam.",
+
+  "projects": [
+    {
+      "title": "Štriga Savjetovanje",
+      "description": "Modern business website for a consulting company, making it easy for clients to get in touch and learn about services.",
+      "features": [
+        "Custom blog CMS for publishing",
+        "Clear service presentation",
+        "Contact form"
+      ],
+      "tech": ["JavaScript", "Firebase"]
+    },
+    {
+      "title": "CFA Society Croatia",
+      "description": "Official site for CFA Society Croatia, providing news, events, and resources for financial professionals.",
+      "features": [
+        "Contact form",
+        "News and posts integration",
+        "Voting system integration"
+      ],
+      "tech": ["Wix", "Custom CSS"]
+    }
+  ],
+  "view_live": "View Live",
+  "my_projects": "My Projects",
+
+  "help_cta": {
+    "inline_label": "Need help section",
+    "region_label": "Didn’t find help section",
+    "title": "Didn’t find what you were looking for?",
+    "text": "Tell us what you need and we’ll suggest the best next step.",
+    "btn": "Contact us",
+    "btn_label": "Contact us",
+    "secondary": "Browse FAQs"
+  },
+
+  "services_intro_title": "What We Offer",
+  "services_intro_blurb": "A modular stack of services you can mix and match to ship faster and grow smarter.",
+  "aria_service_categories": "Service categories",
+  "filter_all": "All",
+
+  "services_intro_title": "What We Offer",
+  "services_intro_blurb": "A modular stack of services you can mix and match to ship faster and grow smarter.",
+  "aria_service_categories": "Service categories",
+  "filter_all": "All",
+
+  "cat_web": "Web",
+  "cat_apps": "Apps",
+  "cat_growth": "Growth",
+  "cat_design": "Design",
+  "cat_care": "Support",
+
+  "service_1_title": "Websites",
+  "service_1_desc_long": "We create modern, fast, and responsive websites tailored to your business needs.",
+  "service_1_feat_1": "Custom design",
+  "service_1_feat_2": "Mobile optimization",
+  "service_1_feat_3": "SEO best practices",
+
+  "service_2_title": "Website maintenance",
+  "service_2_desc_long": "Give your existing website a fresh look and keep it running smoothly.",
+  "service_2_feat_1": "Visual redesign",
+  "service_2_feat_2": "Security updates",
+  "service_2_feat_3": "Performance optimization",
+
+  "service_3_title": "Web applications",
+  "service_3_desc_long": "We develop interactive web applications tailored to your workflow.",
+  "service_3_feat_1": "Custom app development",
+  "service_3_feat_2": "API integration",
+  "service_3_feat_3": "User management",
+
+  "service_4_title": "SEO",
+  "service_4_desc_long": "Improve your website’s visibility and attract more visitors with our SEO services.",
+  "service_4_feat_1": "Keyword research",
+  "service_4_feat_2": "On-page optimization",
+  "service_4_feat_3": "Technical SEO audits",
+
+  "service_5_title": "Digital marketing",
+  "service_5_desc_long": "Reach your audience with targeted digital marketing campaigns.",
+  "service_5_feat_1": "Google Ads management",
+  "service_5_feat_2": "Email marketing",
+
+  "service_6_title": "Branding & design",
+  "service_6_desc_long": "We design logos, branding, and visual solutions that make your business stand out.",
+  "service_6_feat_1": "Logo design",
+  "service_6_feat_2": "Brand guidelines",
+  "service_6_feat_3": "Marketing materials",
+
+  "service_7_title": "Support & care",
+  "service_7_desc_long": "We offer ongoing technical support, regular backups, and fast help.",
+  "service_7_feat_1": "Technical support",
+  "service_7_feat_2": "Regular backups",
+  "service_7_feat_3": "Quick response"
 }

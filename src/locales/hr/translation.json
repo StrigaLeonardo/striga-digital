@@ -26,7 +26,7 @@
   "service_4_title": "SEO optimizacija",
   "service_4_desc": "Poboljšanje pozicije vaše stranice na tražilicama i povećanje vidljivosti.",
   "service_5_title": "Digitalni marketing",
-  "service_5_desc": "Google i Facebook oglašavanje, email kampanje i društvene mreže.",
+  "service_5_desc": "Google oglašavanje, email kampanje i društvene mreže.",
   "service_6_title": "Grafički dizajn i vizualni identitet",
   "service_6_desc": "Izrada logotipa, brendiranje i vizualna rješenja za vaš biznis.",
   "service_7_title": "Održavanje i podrška",
@@ -66,5 +66,99 @@
   "contact_form_message": "Vaša poruka",
   "contact_form_submit": "Pošalji poruku",
   "contact_form_success": "Poruka je uspješno poslana!",
-  "contact_form_spam": "Vaša poruka je odbijena kao neželjena pošta."
+  "contact_form_error": "Greška tokom slanja poruke. Pokušajte ponovo kasnije.",
+  "contact_form_spam": "Vaša poruka je odbijena kao neželjena pošta.",
+  "contact_form_sending": "Šaljem...",
+
+  "projects": [
+    {
+      "title": "Štriga Savjetovanje",
+      "description": "Moderna poslovna web stranica za savjetničku tvrtku koja olakšava klijentima kontakt i upoznavanje s uslugama.",
+      "features": [
+        "Vlastiti CMS za objavu blogova",
+        "Jasna prezentacija usluga",
+        "Kontakt obrazac"
+      ],
+      "tech": ["JavaScript", "Firebase"]
+    },
+    {
+      "title": "CFA Society Croatia",
+      "description": "Službena stranica CFA Society Croatia, pruža vijesti, događanja i resurse za financijske stručnjake.",
+      "features": [
+        "Kontakt obrazac",
+        "Integracija vijesti i objava",
+        "Sustav za glasovanje"
+      ],
+      "tech": ["Wix", "Prilagođeni CSS"]
+    }
+  ],
+  "view_live": "Pogledaj stranicu",
+  "my_projects": "Moji projekti",
+
+  "help_cta": {
+    "inline_label": "Odjeljak za pomoć",
+    "region_label": "Niste pronašli što tražite",
+    "title": "Niste pronašli što ste tražili?",
+    "text": "Recite nam što trebate i predložit ćemo najbolji sljedeći korak.",
+    "btn": "Kontaktirajte nas",
+    "btn_label": "Kontaktirajte nas",
+    "secondary": "Pregledajte ČPP"
+  },
+
+  "services_intro_title": "Što nudimo",
+  "services_intro_blurb": "Modularni paket usluga koje možete kombinirati kako biste brže isporučivali i pametnije rasli.",
+  "aria_service_categories": "Kategorije usluga",
+  "filter_all": "Sve",
+
+  "services_intro_title": "Što nudimo",
+  "services_intro_blurb": "Modularni paket usluga koje možete kombinirati kako biste brže isporučivali i pametnije rasli.",
+  "aria_service_categories": "Kategorije usluga",
+  "filter_all": "Sve",
+
+  "cat_web": "Web",
+  "cat_apps": "Aplikacije",
+  "cat_growth": "Rast",
+  "cat_design": "Dizajn",
+  "cat_care": "Podrška",
+
+  "service_1_title": "Web stranice",
+  "service_1_desc_long": "Izrađujemo moderne, brze i responzivne web stranice prilagođene potrebama vašeg poslovanja.",
+  "service_1_feat_1": "Prilagođeni dizajn",
+  "service_1_feat_2": "Mobilna optimizacija",
+  "service_1_feat_3": "SEO najbolja praksa",
+
+  "service_2_title": "Održavanje weba",
+  "service_2_desc_long": "Osvježite postojeću stranicu i održavajte je stabilnom i sigurnom.",
+  "service_2_feat_1": "Vizualno redizajniranje",
+  "service_2_feat_2": "Sigurnosne nadogradnje",
+  "service_2_feat_3": "Optimizacija performansi",
+
+  "service_3_title": "Web aplikacije",
+  "service_3_desc_long": "Razvijamo interaktivne web aplikacije prilagođene vašim procesima rada.",
+  "service_3_feat_1": "Razvoj prilagođenih aplikacija",
+  "service_3_feat_2": "Integracija API-ja",
+  "service_3_feat_3": "Upravljanje korisnicima",
+
+  "service_4_title": "SEO",
+  "service_4_desc_long": "Poboljšajte vidljivost i privucite više posjetitelja uz naše SEO usluge.",
+  "service_4_feat_1": "Istraživanje ključnih riječi",
+  "service_4_feat_2": "On-page optimizacija",
+  "service_4_feat_3": "Tehnički SEO auditi",
+
+  "service_5_title": "Digitalni marketing",
+  "service_5_desc_long": "Doprite do publike uz ciljane kampanje digitalnog marketinga.",
+  "service_5_feat_1": "Upravljanje Google Ads oglasima",
+  "service_5_feat_2": "E-mail marketing",
+
+  "service_6_title": "Branding i dizajn",
+  "service_6_desc_long": "Dizajniramo logotipe, brend identitete i vizualna rješenja koja izdvajaju vaš posao.",
+  "service_6_feat_1": "Dizajn logotipa",
+  "service_6_feat_2": "Brend smjernice",
+  "service_6_feat_3": "Marketinški materijali",
+
+  "service_7_title": "Podrška i održavanje",
+  "service_7_desc_long": "Nudimo kontinuiranu tehničku podršku, redovite sigurnosne kopije i brzu pomoć.",
+  "service_7_feat_1": "Tehnička podrška",
+  "service_7_feat_2": "Redovite sigurnosne kopije",
+  "service_7_feat_3": "Brzi odaziv"
 }

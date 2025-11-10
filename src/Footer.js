@@ -22,8 +22,8 @@ function Footer() {
           </a>
         </div>
         <nav className="footer-nav">
-          <a href="/services">{t("services")}</a>
           <a href="/about">{t("about")}</a>
+          <a href="/services">{t("services")}</a>
           <a href="/contact">{t("contact")}</a>
           <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
             {t("privacy_policy")}
